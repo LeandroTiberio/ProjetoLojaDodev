@@ -67,8 +67,16 @@ namespace ProjetoLojaDodev.Lib.Models
         }
         public void FinalizarPedido(List<Produto> finalizar)
         {
-            
+            if(finalizarPedido)
+            {
+                finalizar = ValorTotal;
+            }
+            else
+            {
+                false;
+            }
         }
+           
 
     }
     

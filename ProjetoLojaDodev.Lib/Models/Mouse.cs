@@ -26,6 +26,19 @@ namespace ProjetoLojaDodev.Lib.Models
         {
             SemFio = semFio;
         }
+        public override CalcularValor()
+        {
+            var CalcularValor = ValorBase;
+            ValorBase = valorBase + (Dpi/50)
+            if(semFio)
+            {
+                valorBase *1.15;
+            }
+            else
+            {
+                valorBase;
+            }
+        }
         
     }
     

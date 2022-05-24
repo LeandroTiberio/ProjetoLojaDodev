@@ -26,6 +26,19 @@ namespace ProjetoLojaDodev.Lib.Models
         {
             Mecanico = mecanico;
         }
+        public override CalcularValor()
+        {
+            var CalcularValor = ValorBase;
+            ValorBase = valorBase +200;
+            if(semFio)
+            {
+                ValorBase = valorBase * 1.15;
+            }
+            else
+            {
+                ValorBase;
+            }
+        }
     }
     
 }

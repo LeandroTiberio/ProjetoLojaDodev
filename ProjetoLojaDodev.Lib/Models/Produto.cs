@@ -7,14 +7,17 @@ namespace ProjetoLojaDodev.Lib.Models
         public string Descricao { get; set; }
         public double Valor { get; set; }
         public int Estoque { get; set; }
+        public double CalcularValor { get; set;}
         
-        public Produto(string nome, string marca, string descricao, double valor, int estoque)
+        public Produto(string nome, string marca, string descricao, double valor, int estoque,
+        double calcularValor)
         {
             SetNome(nome);
             SetMarca(marca);
             SetDescricao(descricao);
             SetValor(valor);
             SetEstoque(estoque);
+            SetCalcularValor(calcularValor);
         }
         public string GetNome()
         {
@@ -55,6 +58,10 @@ namespace ProjetoLojaDodev.Lib.Models
         public void SetEstoque(int estoque)
         {
             Estoque = estoque;
+        }
+        public virtual double SetCalcularValor(double calcularValor)
+        {
+            CalcularValor = calcularValor;
         }
        
 

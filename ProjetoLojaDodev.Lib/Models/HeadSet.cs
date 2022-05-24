@@ -26,6 +26,19 @@ namespace ProjetoLojaDodev.Lib.Models
         {
             Surround = surround;
         }
+        public override CalcularValor()
+        {
+            var CalcularValor = ValorBase
+            valorBase = valorBase;
+            if (semFio&&surrond)
+            {
+                ValorBase = valorBase + 500;
+            }
+            else
+            {
+                ValorBase + 150;
+            }
+        }
     }
 
 }
